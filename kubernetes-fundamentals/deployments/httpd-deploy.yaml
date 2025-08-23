@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: httpd
+  name: httpd
+  namespace: test
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: httpd
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: httpd
+    spec:
+      containers:
+      - image: httpd
+        name: httpd
