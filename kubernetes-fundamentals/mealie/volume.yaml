@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mealie-pv
+  labels:
+    app: mealie            # PVC selector ile eşleşecek
+spec:
+  capacity:
+    storage: 8Gi           # doğru birim
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /app/data
