@@ -6,7 +6,7 @@ Practice materials and exercises are needed to prepare for the Certified Kuberne
 
 ## Exercises
 
-- [Exercise - 1](/exercise-1) 
+- [Exercise - 1 - DONE](/exercise-1) 
 - [Exercise - 2](/exercise-2) 
 - [Exercise - 3](/exercise-3) 
 - [Exercise - 4](/exercise-4) 
